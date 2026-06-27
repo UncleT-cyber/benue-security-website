@@ -9,6 +9,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Upcoming Events | Smart Student Academic Portal</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<script>
+(function () {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.documentElement.classList.add("dark-mode");
+    }
+})();
+</script>
 
 <link rel="stylesheet" href="style.css">
 
@@ -21,9 +31,8 @@
 <nav>
 
 <div class="logo">
-
+<i class="fa-solid fa-graduation-cap"></i>
 Smart Student Academic Portal
-
 </div>
 
 <ul>
@@ -95,7 +104,8 @@ Stay informed about important academic activities and events.
 
 <br>
 
-<table>
+<div class="table-wrapper">
+    <table>
 
 <tr>
 
@@ -137,7 +147,8 @@ Stay informed about important academic activities and events.
 
 </tr>
 
-</table>
+    </table>
+</div>
 
 <br>
 

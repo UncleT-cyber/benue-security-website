@@ -290,20 +290,48 @@ function getPriorityIcon(priority) {
 
 
 // =====================
-// DARK MODE
+// DARK MODE (FIXED SYSTEM)
 // =====================
+
 function toggleDarkMode() {
 
     document.body.classList.toggle("dark-mode");
 
-    const button = document.getElementById("darkModeBtn");
+    const isDark = document.body.classList.contains("dark-mode");
 
-    if (!button) return;
+    localStorage.setItem("theme", isDark ? "dark" : "light");
 
-    button.innerHTML = document.body.classList.contains("dark-mode")
-        ? "☀️ Light Mode"
-        : "🌙 Dark Mode";
+    const btn = document.getElementById("darkModeBtn");
+
+    if (btn) {
+        btn.innerText = isDark ? "☀️ Light Mode" : "🌙 Dark Mode";
+    }
 }
+
+window.addEventListener("DOMContentLoaded", () => {
+
+    const savedTheme = localStorage.getItem("theme");
+    const btn = document.getElementById("darkModeBtn");
+
+    // FIRST VISIT DEFAULT = DARK MODE
+    if (!savedTheme) {
+        document.body.classList.add("dark-mode");
+        localStorage.setItem("theme", "dark");
+    }
+
+    // APPLY SAVED THEME
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+
+    // BUTTON TEXT UPDATE
+    if (btn) {
+        btn.innerText =
+            document.body.classList.contains("dark-mode")
+                ? "☀️ Light Mode"
+                : "🌙 Dark Mode";
+    }
+});
 
 
 // =====================

@@ -1,59 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me - Benue Security Portal</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>About Me | Smart Student Academic Portal</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-    <h1>About the Project Developer</h1>
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="incidents.html">Incidents</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+<nav>
+<div class="logo">
+Smart Student Academic Portal
+</div>
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="courses.html">Courses</a></li>
+<li><a href="planner.html">Planner</a></li>
+<li><a href="projects.html">Projects</a></li>
+<li><a href="events.html">Events</a></li>
+<li><a href="appointments.html">Contact</a></li>
+</ul>
+</nav>
+
+<marquee>
+Upcoming Events: Cybersecurity Seminar | HTML Lab Assessment | Student Workshop | Guest Lecture
+</marquee>
+
+<button id="darkModeBtn" onclick="toggleDarkMode()">
+🌙 Dark Mode
+</button>
+
 </header>
 
-<section class="about-section">
 
-    <div class="about-card">
+<main class="container">
 
-        <h2>Abah Anthony</h2>
+<section class="about-hero">
 
-        <p>
-            I am a Cyber Security student at Miva Open University with a strong interest in
-            digital safety, secure systems, and community awareness through technology.
-        </p>
+<h1>About Me</h1>
 
-        <p>
-            This project, <strong>Benue Security Awareness Portal</strong>, was developed to highlight
-            security challenges affecting communities in Benue State and to promote peace initiatives
-            through accessible online information.
-        </p>
+<img src="images/cyber-analysis.png"
+alt="Cybersecurity Professional Analyzing Data">
 
-        <p>
-            My goal is to use technology to support safer communities and improve awareness around
-            security-related issues.
-        </p>
+<p>
+Learn more about my educational background, technical journey, career goals, and personal interests in technology.
+</p>
 
-        <div class="contact-box">
-            <p><strong>Email:</strong> a.abah6082@miva.edu.ng</p>
-        </div>
+<h2>Abah Anthony</h2>
 
-    </div>
+<p><strong>Department:</strong> Cybersecurity</p>
+<p><strong>Level:</strong> 100 Level</p>
+<p><strong>University:</strong> Miva Open University</p>
 
 </section>
 
+
+<section class="content-block">
+
+<h3>Educational Background</h3>
+
+<p>
+I am currently a 100 Level Cybersecurity student at Miva Open University.
+My academic focus includes digital security, programming, networking fundamentals,
+cloud computing, and modern web technologies. I am actively building practical skills
+through projects and lab exercises.
+</p>
+
+</section>
+
+
+<section class="content-block">
+
+<h3>Career Aspirations</h3>
+
+<p>
+My goal is to become a professional cybersecurity expert specializing in ethical hacking,
+secure system design, cloud security, and network protection. I aim to develop solutions
+that strengthen digital infrastructure and protect users from cyber threats.
+</p>
+
+</section>
+
+
+<section class="content-block">
+
+<h3>Technical Skills</h3>
+
+<button onclick="toggleSkills()">View My Technical Skills</button>
+
+<div id="skills" style="display:none;">
+<ul>
+<li>HTML5 & CSS3</li>
+<li>JavaScript Basics</li>
+<li>Python Programming</li>
+<li>Cybersecurity Fundamentals</li>
+<li>Networking Basics</li>
+<li>Cloud Networking Fundamentals</li>
+<li>Cloud Computing Concepts</li>
+<li>Network Security Principles</li>
+<li>Problem Solving</li>
+</ul>
+</div>
+
+</section>
+
+
+<section class="card-container">
+
+<div class="card">
+<img src="images/student-avatar.png" alt="Student Avatar">
+<h3>Professional Interests</h3>
+<p>
+Cybersecurity, networking, cloud computing, web development, and digital innovation.
+I enjoy understanding how systems connect and how to secure them.
+</p>
+</div>
+
+<div class="card">
+<h3>Hobbies & Interests</h3>
+<p>
+Learning new technologies, building websites, reading cybersecurity content,
+solving technical problems, and exploring cloud systems.
+</p>
+</div>
+
+</section>
+
+</main>
+
+
 <footer>
-    <p>&copy; 2026 Benue Security Awareness Project</p>
+<p>Smart Student Academic Portal</p>
+<p>Designed by Anthony Abah | Cybersecurity Student</p>
 </footer>
+
+
+<script src="script.js"></script>
 
 </body>
 </html>

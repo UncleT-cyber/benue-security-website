@@ -1,49 +1,46 @@
-# Smart Student Academic Portal
+# Smart Student Academic Portal (CSC106 Project)
 
-## ⚠️ Resubmission Notice
-This project is a resubmission of a previously submitted CSC106 assignment. The content has been fully updated to align with the revised project brief as approved during office hour discussion.
+## 📌 Project Overview
+This project is a responsive web-based academic portal developed as part of the CSC106 web development assessment. It is designed as a student-focused dashboard system for managing academic activities such as courses, planning, projects, and events.
 
-## 📌 Context
-The original submission focused on a security awareness website. Following updated instructions from the course brief, the project has been redesigned into a Smart Student Academic Portal.
+## ⚠️ Resubmission Context
+This project is a resubmission of the CSC106 lab assessment. The original submission was a different themed website (security awareness portal). Following clarification of the official course requirements, the project has been fully redesigned to meet the correct brief:  
+Responsive Student Portfolio and Academic Management Website.
 
-## 📘 Project Overview
-This project is a responsive web-based academic portal developed as part of a first-year web development assessment (CSC106). It helps students manage academic activities such as courses, planning, events, and project tracking.
-
----
-
-## 🎯 Features
-- Responsive homepage with navigation system
-- Student dashboard-style layout
-- Course management page with table structure
-- Academic planner system
-- Project tracking with status updates
-- Events and appointment/contact page
-- Dark mode toggle support
-- Mobile-friendly responsive design
-
----
+## 🎯 Key Features
+- Responsive student dashboard interface  
+- Navigation system across multiple academic pages  
+- Course management section with structured layout  
+- Academic planner with task organization features  
+- Project tracking page  
+- Events and appointments page  
+- Dark mode toggle (JavaScript DOM interaction)  
+- Mobile-friendly responsive design  
 
 ## 🛠️ Technologies Used
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- GitHub Pages (for deployment)
-
----
+- HTML5  
+- CSS3  
+- JavaScript (Vanilla DOM manipulation)  
+- GitHub Pages (deployment)  
 
 ## 📱 Responsiveness
-The website is fully responsive and optimized for:
-- Mobile phones
-- Tablets
-- Desktop screens
-
-Tables and layouts adjust for smaller screens using responsive design techniques.
-
----
+The interface is optimized for:
+- Mobile devices  
+- Tablets  
+- Desktop screens  
 
 ## 🌐 Live Demo
 https://unclet-cyber.github.io/benue-security-website/
 
----
+## 📂 Pages Included
+- index.html  
+- about.html  
+- courses.html  
+- projects.html  
+- planner.html  
+- events.html  
+- appointments.html  
+- admin.html  
 
-## 📂 Project Structure
+## 👨‍💻 Author
+UncleT-c

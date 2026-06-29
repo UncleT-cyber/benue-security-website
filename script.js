@@ -138,7 +138,7 @@ updateClock();
 
 
 // =====================
-// PLANNER SYSTEM (CLEAN SINGLE VERSION)
+// PLANNER SYSTEM 
 // =====================
 
 let tasks = [];
@@ -346,4 +346,112 @@ document.addEventListener("DOMContentLoaded", () => {
             this.value = this.value.replace(/[^0-9+]/g, "");
         });
     }
+});
+
+const cards = document.querySelectorAll(".card");
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target); // runs once only
+        }
+    });
+}, {
+    threshold: 0.15
+});
+
+// apply observer
+cards.forEach(card => {
+    observer.observe(card);
+});
+
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+        loader.classList.add("hide");
+
+        setTimeout(() => {
+            loader.style.display = "none";
+        }, 600);
+    }
+});
+
+// =====================
+// BACK TO TOP BUTTON
+// =====================
+
+let topBtn = document.getElementById("topBtn");
+
+window.addEventListener("DOMContentLoaded", function () {
+
+    let topBtn = document.getElementById("topBtn");
+
+    if (!topBtn) return;
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 100) {
+            topBtn.style.display = "block";
+        } else {
+            topBtn.style.display = "none";
+        }
+
+    });
+
+    window.scrollToTop = function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    };
+
+});
+
+window.addEventListener("DOMContentLoaded", function () {
+
+    const links = document.querySelectorAll("nav ul li a");
+
+    let currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+// This targets .stat-card, .dash-card, .content-block, AND any class name that contains the word "hero"
+// The ultimate master list — completely covers every single page!
+const cards = document.querySelectorAll(".card, .hero-image, .stat-card, .dash-card, .content-block, .summary-card, [class*='hero']");
+
+    
+    cards.forEach(card => {
+        card.classList.add("card-animate");
+    });
+
+    const observerOptions = {
+        root: null, 
+        threshold: 0.15 
+    };
+
+    const scrollObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                
+                entry.target.classList.add("reveal");
+                
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    cards.forEach(card => {
+        scrollObserver.observe(card);
+    });
 });

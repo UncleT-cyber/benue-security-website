@@ -23,6 +23,10 @@
 
 <body>
 
+    <div id="loader">
+    <div class="spinner"></div>
+    <p>Loading Smart Portal...</p>
+</div>
 <header>
 
 <nav>
@@ -42,13 +46,14 @@ Smart Student Academic Portal
 </ul>
 </nav>
 
-<marquee>
-Upcoming Events: Cybersecurity Seminar | HTML Lab Assessment | Student Workshop | Guest Lecture
-</marquee>
-
-<button id="darkModeBtn" onclick="toggleDarkMode()">
-🌙 Dark Mode
-</button>
+<div class="sticky-bar">
+        <marquee>
+            Upcoming Events: Department Orientation | CSC106 Lab Assessment | Cybersecurity Awareness Seminar | Student Innovation Workshop
+        </marquee>
+        <button id="darkModeBtn" onclick="toggleDarkMode()">
+            🌙 Dark Mode
+        </button>
+    </div>
 
 </header>
 
@@ -151,11 +156,11 @@ solving technical problems, and exploring cloud systems.
 
 <footer>
 <p>Smart Student Academic Portal</p>
-<p>Designed by Anthony Abah | Cybersecurity Student</p>
+<p>created by Anthony Abah | Cybersecurity Student</p>
 </footer>
 
 
 <script src="script.js"></script>
-
+<button id="topBtn" onclick="scrollToTop()">↑ Top</button>
 </body>
 </html>

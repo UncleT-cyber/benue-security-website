@@ -20,6 +20,10 @@
 </head>
 
 <body>
+<div id="loader">
+    <div class="spinner"></div>
+    <p>Loading Smart Portal...</p>
+</div>
 
 <!-- HEADER -->
 <header>
@@ -41,13 +45,14 @@ Smart Student Academic Portal
     </ul>
 </nav>
 
-<marquee>
-Upcoming Events: Cybersecurity Seminar | HTML Lab Assessment | Student Workshop | Guest Lecture
-</marquee>
-
-<button id="darkModeBtn" onclick="toggleDarkMode()">
-🌙 Dark Mode
-</button>
+<div class="sticky-bar">
+        <marquee>
+            Upcoming Events: Department Orientation | CSC106 Lab Assessment | Cybersecurity Awareness Seminar | Student Innovation Workshop
+        </marquee>
+        <button id="darkModeBtn" onclick="toggleDarkMode()">
+            🌙 Dark Mode
+        </button>
+    </div>
 
 </header>
 
@@ -57,13 +62,13 @@ Upcoming Events: Cybersecurity Seminar | HTML Lab Assessment | Student Workshop 
 <!-- HERO SECTION -->
 <section class="hero-home">
 
-    <img src="images/my-photo.jpg" alt="Anthony Itodo" class="profile-image">
+    <img src="images/my-photo.jpg" alt="Anthony Abah" class="profile-image">
 
     <h1>Welcome to My Smart Student Academic Portal</h1>
 
     <h2>Anthony Abah</h2>
 
-    <p>B.Sc. Cybersecurity Student | MIVA Open University</p>
+    <p>Cybersecurity Student | MIVA Open University</p>
 
     <p>
         This portal showcases my academic journey, projects, study planner, courses and student activities while demonstrating my HTML, CSS and JavaScript skills.
@@ -166,11 +171,11 @@ allowfullscreen>
 <footer>
 
 <p>© 2026 Smart Student Academic Portal</p>
-<p>Designed by Anthony Abah | Cybersecurity Student</p>
+<p>created by Anthony Abah | Cybersecurity Student</p>
 
 </footer>
 
 <script src="script.js"></script>
-
+<button id="topBtn" onclick="scrollToTop()">↑ Top</button>
 </body>
 </html>
